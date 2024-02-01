@@ -1,0 +1,15 @@
+{% extends 'catalog/base.html' %}
+
+{% block content %}
+{% load my_tags %}
+<div class="card" style="width: 20rem;">
+    <img src="{{ object.preview|mymedia }}" class="card-img-top" alt="Изображение отсутствует">
+    <div class="card-body">
+        <h5 class="card-title">{{ object.name }}, {{ object.price | floatformat:2 }} руб</h5>
+        <p class="card-text">{{ object.description|slice:100 }}.</p>
+        <p class="card-text"> Актуальная версия {{ object.active_version }}.</p>
+        <span class="text-muted">{{ object.owner|default:"-" }}</span><br>
+        <a href="#" class="btn btn-primary">Купить</a>
+    </div>
+</div>
+{% endblock %}

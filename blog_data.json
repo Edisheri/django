@@ -1,0 +1,28 @@
+[
+  {
+    "model": "blog.post",
+    "pk": 1,
+    "fields": {
+      "title": "Тест1",
+      "slug": "test1",
+      "body": "измененный текст",
+      "preview": "",
+      "created_at": "2023-12-20",
+      "is_published": true,
+      "views_count": 8
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 2,
+    "fields": {
+      "title": "тест2",
+      "slug": "test2",
+      "body": "еще какой-то текст",
+      "preview": "blog/pict.png",
+      "created_at": "2023-12-20",
+      "is_published": true,
+      "views_count": 2
+    }
+  }
+]

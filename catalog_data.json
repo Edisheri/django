@@ -1,0 +1,210 @@
+[
+  {
+    "model": "catalog.category",
+    "pk": 1,
+    "fields": {
+      "name": "Фрукты",
+      "description": null
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 2,
+    "fields": {
+      "name": "Овощи",
+      "description": null
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 3,
+    "fields": {
+      "name": "Напитки",
+      "description": null
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 4,
+    "fields": {
+      "name": "Бакалея",
+      "description": null
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 1,
+    "fields": {
+      "name": "Яблоки",
+      "description": "ГренниСмит, 1 кг",
+      "preview": "",
+      "category": 1,
+      "price": 150,
+      "created_at": "2023-12-13",
+      "last_changed_at": "2023-12-13"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 2,
+    "fields": {
+      "name": "апельсины",
+      "description": "сочные, 1 кг",
+      "preview": "",
+      "category": 1,
+      "price": 150,
+      "created_at": "2023-12-13",
+      "last_changed_at": "2023-12-27"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 3,
+    "fields": {
+      "name": "Помидоры",
+      "description": "Фламенко, 1 кг",
+      "preview": "",
+      "category": 2,
+      "price": 300,
+      "created_at": "2023-12-13",
+      "last_changed_at": "2023-12-13"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 4,
+    "fields": {
+      "name": "Огурцы",
+      "description": "Колючие короткоплодные, 1 кг",
+      "preview": "",
+      "category": 2,
+      "price": 200,
+      "created_at": "2023-12-13",
+      "last_changed_at": "2023-12-13"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 5,
+    "fields": {
+      "name": "Вода",
+      "description": "Газированая, 1 шт",
+      "preview": "",
+      "category": 3,
+      "price": 40,
+      "created_at": "2023-12-13",
+      "last_changed_at": "2023-12-13"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 6,
+    "fields": {
+      "name": "Сок",
+      "description": "Вишневый 1 шт",
+      "preview": "",
+      "category": 3,
+      "price": 150,
+      "created_at": "2023-12-13",
+      "last_changed_at": "2023-12-13"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 7,
+    "fields": {
+      "name": "Печенье",
+      "description": "Овсяное с изюмом, 1 уп",
+      "preview": "",
+      "category": 4,
+      "price": 100,
+      "created_at": "2023-12-13",
+      "last_changed_at": "2023-12-13"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 8,
+    "fields": {
+      "name": "Зефир",
+      "description": "В шоколаде, 1 уп",
+      "preview": "",
+      "category": 4,
+      "price": 150,
+      "created_at": "2023-12-13",
+      "last_changed_at": "2023-12-13"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 9,
+    "fields": {
+      "name": "яблоки гольден",
+      "description": "сладкие, 1 кг",
+      "preview": "",
+      "category": 1,
+      "price": 200,
+      "created_at": "2023-12-27",
+      "last_changed_at": "2023-12-27"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 10,
+    "fields": {
+      "name": "Яблоки Pink Lady",
+      "description": "красные, сочные, 1 кг",
+      "preview": "",
+      "category": 1,
+      "price": 200,
+      "created_at": "2023-12-27",
+      "last_changed_at": "2023-12-27"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 11,
+    "fields": {
+      "name": "яблоки семеренко",
+      "description": "зеленые, кислые 1 кг",
+      "preview": "",
+      "category": 1,
+      "price": 200,
+      "created_at": "2023-12-27",
+      "last_changed_at": "2023-12-27"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 12,
+    "fields": {
+      "name": "сок томатный",
+      "description": "производитель такой-то, упаковка - тетрапак, 1 л",
+      "preview": "",
+      "category": 3,
+      "price": 100,
+      "created_at": "2023-12-27",
+      "last_changed_at": "2023-12-27"
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 1,
+    "fields": {
+      "product": 2,
+      "number": 1,
+      "name": "Создана",
+      "is_active": false
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 2,
+    "fields": {
+      "product": 2,
+      "number": 2,
+      "name": "Обновление",
+      "is_active": true
+    }
+  }
+]

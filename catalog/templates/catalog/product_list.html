@@ -1,0 +1,40 @@
+{% extends 'catalog/base.html' %}
+
+
+{% block content %}
+<div class="col-12 mb-5">
+    <a class="btn btn-outline-primary" href="{% url 'catalog:create_product' %}">Добавить продукт</a>
+</div>
+{% for object in object_list %}
+<div class="col-md-4">
+    <div class="card mb-4 box-shadow">
+        <div class="card-body">
+            <p class="card-text">{{ object.name }}</p>
+            <p class="card-text"> Актуальная версия {{ object.active_version }}.</p>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                    <a href="{% url 'catalog:view_product' object.pk %}" class="btn btn-secondary">Показать</a>
+                    {% if user.is_verified %}
+                        <a href="{% url 'catalog:edit_product' object.pk %}" class="btn btn-link">Изменить</a>
+                        <a href="{% url 'catalog:delete_product' object.pk%}" class="btn btn-danger">Удалить</a>
+                    {% else %}
+                        <a href="{% url 'users:login' %}" class="btn btn-link">Изменить</a>
+                        <a href="{% url 'users:login' %}" class="btn btn-danger">Удалить</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            {% if perms.catalog.set_is_published %}
+                {% if object.is_published %}
+                    <a class="btn btn-outline-warning" href="{% url 'catalog:published_toggle' object.pk %}">Снять с публикации</a>
+                {% else %}
+                    <a class="btn btn-outline-success" href="{% url 'catalog:published_toggle' object.pk %}">Опубликовать</a>
+                {% endif %}
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+{% endblock %}
